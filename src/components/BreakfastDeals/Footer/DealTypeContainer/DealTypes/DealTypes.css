@@ -1,0 +1,22 @@
+.DealTypes {
+  background-color: black;
+  height: 300px;
+}
+.DealTypes img {
+  height: auto;
+  width: 100%;
+}
+root {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  -webkit-background-composite: pink;
+}
+.gridList {
+  width: 500;
+  height: 450;
+}
+icon {
+  color: red;
+}

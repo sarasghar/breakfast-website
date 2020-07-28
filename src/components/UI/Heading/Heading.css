@@ -1,0 +1,17 @@
+.Heading {
+  background-color: transparent;
+}
+
+.H1 {
+  color: black;
+  font-size: 3vw;
+  text-transform: uppercase;
+}
+.H2 {
+  font-size: 2vw;
+  color: #524f4f;
+}
+.H3 {
+  font-size: 1vw;
+  color: red;
+}

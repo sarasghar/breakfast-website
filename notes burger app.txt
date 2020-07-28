@@ -1,0 +1,56 @@
+create app 
+run npm eject
+add in webpack
+		    modules: true,
+                  localIdentName: "[name]__[local]__[hash:base64:5]",
+
+APP.js
+
+
+difference between container and component
+Containers contain state (class based) and useState (functional)
+components are dumb even if they are class based or functional (that does not use hooks) 
+
+1. APP.js
+ 1.a. Layout (Component)
+    1.a.a. burgerBuilder (Container - Stateful)
+
+
+
+>>>Make snippet in vs code for functional component (stateless) since it looks same everytime
+
+npm install --save prop-types : its to determine the type of props. 
+Can be used on both functional and class based components. 
+import PropTypes from 'prop-types';
+
+Object.keys() >> default javascript object use to extract keys of an object and returns an array. 
+const transformedIngredients = Object.keys();
+
+               const ingr = { abc: 1, xyz: 2, hhy: 1, yup: 3}; Object.keys(ingr).map((igKey) => {[...Array(ingr[igkey])].map(i => {console.log(ingr[i]); return i+0;})}
+
+price uptill two decimal places: {props.price.toFixed(2)}
+
+CSS property >>>> transform:translateY(-100vh) ; // vh is viewport height, to slide modal away from the screen
+
+Since button is used throughout application, we made Button component and added dynamic styles to it.
+<button
+    className={[classes.Button, classes[props.btnType]].join("")}
+
+>>>> here btnType can be Danger (Red button) or a Green button so we used it in combination with .Button and use join(" ") to make a string of class name from this array
+
+Read about web pack
+
+>>>CSS BELOW
+padding: 8px;
+  height: 80%;
+  box-sizing: border-box; // this is so that the 80% of height also includes padding 
+
+>>.Open {
+    transform: translateX(0); //shift side drawer to the position definded in above css 
+}
+
+Due to Asynchronous nature of set state. We set state by passing prevState
+this.setState( ( prevState ) => {
+            return { showSideDrawer: !prevState.showSideDrawer };
+        } );
+
